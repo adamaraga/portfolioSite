@@ -1,7 +1,12 @@
 import React from "react";
 import "./asset/styles/scss/main.scss";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Home from "./pages/Home";
 import WorkPage from "./pages/WorkPage";
@@ -15,6 +20,8 @@ const App = () => {
       <Cursor />
       <ToastContainer />
       <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
+
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="work" element={<WorkPage />} />
