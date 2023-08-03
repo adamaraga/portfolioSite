@@ -1,0 +1,53 @@
+.experienceModal {
+  color: #d9d9d9;
+  &__item {
+    border-left: 0.1rem solid #cacaca;
+    padding-left: 4rem;
+    position: relative;
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      padding-bottom: 7rem;
+    }
+
+    &__circle {
+      display: inline-block;
+      position: absolute;
+      left: -1rem;
+      top: -0.3rem;
+    }
+
+    &__header {
+      display: flex;
+      //   align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      flex-wrap: wrap;
+
+      &__titleCon {
+        & h4 {
+          font-size: 1.6rem;
+          font-weight: 500;
+          background: $primary-gradient;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        & h5 {
+          margin-top: 0.5rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__disc {
+      margin-bottom: 0;
+
+      & li {
+        list-style: disc;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+}

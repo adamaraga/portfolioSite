@@ -1,0 +1,39 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin line-animation {
+  &::after {
+    content: " ";
+    border-radius: 0.1rem;
+    height: 0.2rem;
+    width: 0%;
+    padding: auto;
+    position: absolute;
+    z-index: 2;
+    background: $primary-gradient;
+    transition: $transition;
+    left: 0;
+    bottom: -0.3rem;
+  }
+
+  &:hover {
+    // color: $primary-color;
+    background: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

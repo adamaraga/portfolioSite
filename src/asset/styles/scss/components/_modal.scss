@@ -1,0 +1,127 @@
+.modal {
+  &__con {
+    position: fixed;
+    display: table;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.648);
+
+    &.open {
+      transform: scaleY(0.01) scaleX(0);
+      animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      .modal__background {
+        .modal__content {
+          transform: scale(0);
+          animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)
+            forwards;
+        }
+      }
+      &.close {
+        transform: scale(1);
+        animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        .modal__background {
+          .modal__content {
+            animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+          }
+        }
+      }
+    }
+  }
+
+  &__background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__contentCon {
+    position: relative;
+    width: 90%;
+    max-width: 80rem;
+  }
+
+  &__content {
+    background-color: $bg-color-alt;
+    min-height: 40rem;
+    max-height: 80vh;
+    position: relative;
+    border-radius: 1rem;
+    overflow-y: auto;
+
+    &__main {
+      padding: 2rem;
+
+      & h3 {
+        text-align: center;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__btnCon {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+      height: 3.5rem;
+      width: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: inset -0.3rem 0 0.6rem #00000029;
+      // cursor: pointer;
+      z-index: 10;
+    }
+  }
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

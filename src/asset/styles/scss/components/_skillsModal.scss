@@ -1,0 +1,17 @@
+.skillsModal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+
+  &__item {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 0.1rem solid #fff;
+    border-radius: 2rem;
+    background: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

@@ -1,0 +1,223 @@
+:root {
+  font-size: 62.5%;
+  --body-padding: 10%;
+}
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "layout/mainLayout";
+
+@import "components/navBar";
+@import "components/hero";
+@import "components/about";
+@import "components/work";
+@import "components/contact";
+@import "components/footer";
+@import "components/modal";
+@import "components/experienceModal";
+@import "components/skillsModal";
+@import "components/drawer";
+
+@import "pages/workPage.scss";
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem grey;
+  border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-gradient;
+  border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(225deg, #11a0cc 14.89%, #512090 85.85%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select {
+  color: $text-color;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.btn {
+  background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+  border-radius: 1rem;
+  min-width: 15.6rem;
+  height: 5.6rem;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  // cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+/////////// MODAL STYLES ////////////
+
+.modalMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#star1,
+#star2,
+#star3,
+#circle {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.cls-1 {
+  fill: #fff;
+}
+.cls-2 {
+  fill: #fff;
+}
+#star1 {
+  animation: twinkle 6s infinite;
+}
+#star2 {
+  animation: twinkle 4s infinite;
+  animation-delay: 0.5s;
+}
+#star3 {
+  animation: twinkle 3s infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+/////////// CURSOR STYLES ////////////
+
+.cursor-dot,
+.cursor-dot-outline {
+  z-index: 300000000000;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: $primary-gradient;
+}
+
+.cursor-dot-outline {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
