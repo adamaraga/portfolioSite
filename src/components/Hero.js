@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "../common/Button";
-import myImg from "../asset/images/adam.jpg";
 import Star from "../common/Star";
-// import myImg from "../asset/images/profile.jpg";
 
 const Hero = () => {
   return (
@@ -16,7 +14,10 @@ const Hero = () => {
 
       <div className="hero__right">
         <Star />
-        <img src={myImg} alt="" />
+        <img
+          src="https://res.cloudinary.com/adamworkimages/image/upload/v1691066163/portfolio/adam_opjkvf.jpg"
+          alt=""
+        />
       </div>
     </section>
   );

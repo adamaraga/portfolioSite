@@ -1,6 +1,4 @@
 import React from "react";
-import portfolioIcon from "../asset/images/portfolio.png";
-import groupImg from "../asset/images/groupWork.png";
 import { Button } from "../common/Button";
 import { Link } from "react-router-dom";
 
@@ -11,11 +9,18 @@ const Work = () => {
 
       <div className="work__main">
         <div className="work__main__left">
-          <img className="work__main__left__img" src={groupImg} alt="" />
+          <img
+            className="work__main__left__img"
+            src="https://res.cloudinary.com/adamworkimages/image/upload/v1691066250/portfolio/groupWork_joemke.png"
+            alt=""
+          />
         </div>
 
         <div className="work__main__right">
-          <img src={portfolioIcon} alt="" />
+          <img
+            src="https://res.cloudinary.com/adamworkimages/image/upload/v1691066162/portfolio/portfolio_otu60m.png"
+            alt=""
+          />
         </div>
       </div>
       <Link to="/work">
