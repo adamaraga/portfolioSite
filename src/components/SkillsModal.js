@@ -1,36 +1,7 @@
-import React, { useState } from "react";
 import Star from "../common/Star";
+import { skills } from "../data/skills";
 
 const SkillsModal = () => {
-  const [skills] = useState([
-    "React",
-    "JavaScript",
-    "HTML",
-    "TypeScript",
-    "React Native",
-    "Next.js",
-    "CSS",
-    "SCSS",
-    "SASS",
-    "Tailwind",
-    "GIT",
-    "Redux",
-    "jQuery",
-    "DOM",
-    "MUI",
-    "Cypress",
-    "JSON",
-    "Node",
-    "Express",
-    "Webpack",
-    "Babel",
-    "Firebase",
-    "Heroku",
-    "Netlify",
-    "AWS",
-    "UI/UX",
-  ]);
-
   return (
     <div className="skillsModal">
       <Star />

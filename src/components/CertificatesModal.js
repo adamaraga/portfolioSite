@@ -1,23 +1,10 @@
-import React, { useState } from "react";
 import Star from "../common/Star";
+import { certificates } from "../data/Certificates";
 
 const CertificatesModal = () => {
-  const [data] = useState([
-    {
-      name: "JavaScript Algorithms and Data Structure",
-      source: "FreeCodeCamp",
-      link: "https://www.freecodecamp.org/certification/Adam-Abdullahi-Araga/javascript-algorithms-and-data-structures",
-    },
-    {
-      name: "Responsive Web Design",
-      source: "FreeCodeCamp",
-      link: "https://www.freecodecamp.org/certification/Adam-Abdullahi-Araga/responsive-web-design",
-    },
-  ]);
-
   return (
     <div className="experienceModal">
-      {data.map((item, i) => {
+      {certificates.map((item, i) => {
         return (
           <div key={i} className="experienceModal__item">
             <span className="experienceModal__item__circle">
