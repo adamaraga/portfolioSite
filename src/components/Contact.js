@@ -34,8 +34,8 @@ const Contact = () => {
 
     if (userEmailError || userNameError || messageError) {
       setInputError({
-        name: userNameError,
-        email: userEmailError,
+        user_name: userNameError,
+        user_email: userEmailError,
         message: messageError,
       });
       return false;
@@ -82,6 +82,18 @@ const Contact = () => {
     }
   };
 
+  const handleInputChange = (name, value) => {
+    setData((curr) => {
+      return { ...curr, [name]: value };
+    });
+
+    if (inputError?.[name]) {
+      setInputError((currError) => {
+        return { ...currError, [name]: "" };
+      });
+    }
+  };
+
   return (
     <section id="contact" className="contact">
       <h2 className="contact__title">Let Discuss</h2>
@@ -93,15 +105,11 @@ const Contact = () => {
               type="text"
               placeholder="Name"
               value={data.user_name}
-              onChange={(e) =>
-                setData((curr) => {
-                  return { ...curr, user_name: e.target.value };
-                })
-              }
+              onChange={(e) => handleInputChange("user_name", e.target.value)}
               name="user_name"
             />
             <div className="contact__form__inputs__error">
-              {inputError?.name}
+              {inputError?.user_name}
             </div>
           </div>
           <div>
@@ -109,15 +117,11 @@ const Contact = () => {
               type="text"
               placeholder="Email Address"
               value={data.user_email}
-              onChange={(e) =>
-                setData((curr) => {
-                  return { ...curr, user_email: e.target.value };
-                })
-              }
+              onChange={(e) => handleInputChange("user_email", e.target.value)}
               name="user_email"
             />
             <div className="contact__form__inputs__error">
-              {inputError?.email}
+              {inputError?.user_email}
             </div>
           </div>
         </div>
@@ -130,11 +134,7 @@ const Contact = () => {
             rows="10"
             placeholder="Message"
             value={data.message}
-            onChange={(e) =>
-              setData((curr) => {
-                return { ...curr, message: e.target.value };
-              })
-            }
+            onChange={(e) => handleInputChange("message", e.target.value)}
           ></textarea>
           <div className="contact__form__inputs__error">
             {inputError?.message}
