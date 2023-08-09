@@ -57,11 +57,12 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        I am a Highly motivated and skilled Front-End Engineer with 4+ years of
-        experience in developing and delivering impactful web and mobile
-        applications. I bring a blend of technical proficiency and creative
-        thinking to deliver impactful, cutting-edge software solutions that
-        captivate customers and drive business results.
+        Highly motivated and skilled senior Front-End Engineer with 5+ years of
+        expertise in developing impactful web and mobile applications. I combine
+        technical proficiency and creative thinking to deliver cutting-edge
+        software solutions that captivate customers and drive business results.
+        Proficient in using advanced technologies and design principles to
+        create intuitive and user-friendly experiences.
       </p>
 
       <Button onClick={handleDownload}>Download CV</Button>
