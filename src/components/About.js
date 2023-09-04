@@ -57,7 +57,7 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Highly motivated and skilled senior Front-End Engineer with 3+ years of
+        Highly motivated and skilled senior Front-End Engineer with 5+ years of
         expertise in developing impactful web and mobile applications. I combine
         technical proficiency and creative thinking to deliver cutting-edge
         software solutions that captivate customers and drive business results.

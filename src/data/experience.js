@@ -12,7 +12,7 @@ export const experience = [
   {
     jobTitle: "Front-End Engineer",
     name: "STETiS | Nigeria",
-    date: "Jan 2021 - Sep 2022",
+    date: "Aug 2020 - Sep 2022",
     disc: [
       "Spearheaded adaptation of Functional Components over Class Components, hence reducing operating costs and improving code readability. Achieved quick and noteworthy results.",
       "Developed thumbnail sliders for property images, Optimized and lazy-loaded property images to reduce page load significantly.",
@@ -23,22 +23,22 @@ export const experience = [
       "Worked cooperatively with client services, sales and design teams in a deadline-driven environment.",
     ],
   },
-  // {
-  //   jobTitle: "Web Developer",
-  //   name: "Freelance | Nigeria(Remote)",
-  //   date: "Oct 2018 - Aug 2020",
-  //   disc: [
-  //     "Meeting with prospective clients to review websites, and gather the client’s specifications for new or existing websites.",
-  //     "Designing and implementing the frontend using HTML5, CSS3, SASS, jQuery, and React JS.",
-  //     "Built Backend using Node.js and Firebase.",
-  //     "Managed and executed multiple projects simultaneously to meet critical deadlines.",
-  //     "Conducted testing of websites across all major browsers to ensure quality and consistency throughout.",
-  //   ],
-  // },
+  {
+    jobTitle: "Web Developer",
+    name: "Freelance | Nigeria(Remote)",
+    date: "Oct 2018 - Aug 2020",
+    disc: [
+      "Meeting with prospective clients to review websites, and gather the client’s specifications for new or existing websites.",
+      "Designing and implementing the frontend using HTML5, CSS3, SASS, jQuery, and React JS.",
+      "Built Backend using Node.js and Firebase.",
+      "Managed and executed multiple projects simultaneously to meet critical deadlines.",
+      "Conducted testing of websites across all major browsers to ensure quality and consistency throughout.",
+    ],
+  },
   {
     jobTitle: "Front-End Developer Intern",
     name: "STETiS | Nigeria",
-    date: "Aug 2020 - Jan 2021",
+    date: "may 2018 - oct 2018",
     disc: [
       "Part of the frontend development team that worked on an in-house Human Resource Management System and Document Management System Produced Responsive websites with HTML, CSS, React.js and Redux.",
       "Created reusable components using styled-component library.",
