@@ -16,14 +16,14 @@ const About = () => {
 
   const handleDownload = () => {
     // using Java Script method to get PDF file
-    fetch("Resume(Adam Araga A.).pdf").then((response) => {
+    fetch("AdamAragaResume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Resume(Adam Araga A.).pdf";
+        alink.download = "AdamAragaResume.pdf";
         alink.click();
       });
     });
@@ -42,7 +42,7 @@ const About = () => {
         title="Certificates"
         openModal={openModalCert}
         setOpenModal={setopenModalCert}
-        width="600rem"
+        width="60rem"
       >
         <CertificatesModal />
       </Modal>
@@ -50,19 +50,21 @@ const About = () => {
         title="Skills"
         openModal={openModalSkills}
         setOpenModal={setopenModalSkills}
-        width="600rem"
+        width="60rem"
       >
         <SkillsModal />
       </Modal>
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Highly motivated and skilled senior Front-End Engineer with 5+ years of
-        expertise in developing impactful web and mobile applications. I combine
-        technical proficiency and creative thinking to deliver cutting-edge
-        software solutions that captivate customers and drive business results.
-        Proficient in using advanced technologies and design principles to
-        create intuitive and user-friendly experiences.
+        Dedicated Senior Front-End Software Engineer with over 5 years of
+        hands-on expertise in crafting exceptional user interfaces and driving
+        web application development. Proficient in a wide range of front-end
+        technologies. Adept at translating complex design concepts into
+        responsive, high-performance, and visually appealing user experiences.
+        Proven track record of leading cross-functional teams, streamlining
+        development processes, and consistently delivering projects on time and
+        within scope.
       </p>
 
       <Button onClick={handleDownload}>Download CV</Button>
