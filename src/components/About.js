@@ -57,9 +57,9 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Dedicated Senior Front-End Software Engineer with over 5 years of
-        hands-on expertise in crafting exceptional user interfaces and driving
-        web application development. Proficient in a wide range of front-end
+        Dedicated Front-End Software Engineer with over 3 years of hands-on
+        expertise in crafting exceptional user interfaces and driving web
+        application development. Proficient in a wide range of front-end
         technologies. Adept at translating complex design concepts into
         responsive, high-performance, and visually appealing user experiences.
         Proven track record of leading cross-functional teams, streamlining

@@ -1,6 +1,6 @@
 export const experience = [
   {
-    jobTitle: "Senior Front-End Engineer",
+    jobTitle: "Front-End Engineer",
     name: "Ultainfinity | United Kingdom (Remote)",
     date: "Sep 2022 - present",
     disc: [
@@ -11,9 +11,9 @@ export const experience = [
     ],
   },
   {
-    jobTitle: "Front-End Engineer",
+    jobTitle: "Front-End Developer",
     name: "STETiS | Nigeria",
-    date: "Aug 2020 - Sep 2022",
+    date: "Feb 2021 - Sep 2022",
     disc: [
       "Advocated for the transition from Class Components to Functional Components, resulting in significant development time reductions by 30% and notable improvements in code readability.",
       "Supervised the complete software development lifecycle for multiple projects, ensuring flawless 100% on-time deliveries.",
@@ -22,20 +22,9 @@ export const experience = [
     ],
   },
   {
-    jobTitle: "Web Developer",
-    name: "Freelance | Nigeria(Remote)",
-    date: "Oct 2018 - Aug 2020",
-    disc: [
-      "Created an interactive dashboard for engaging with customers, agents, and merchants.",
-      "Developed and maintained web applications using Next.js, ensuring high performance and code re-usability.",
-      "Developed and executed multiple projects simultaneously to meet critical deadlines.",
-      "Conducted testing of websites across all major browsers to ensure quality and consistency throughout.",
-    ],
-  },
-  {
     jobTitle: "Front-End Developer Intern",
     name: "STETiS | Nigeria",
-    date: "may 2018 - oct 2018",
+    date: "Sep 2020 - Feb 2021",
     disc: [
       "Contributed to the creation of an in-house Human Resource Management System, which played a pivotal role in elevating company productivity by an impressive 50%.",
       "Created reusable components using styled-component library to reduce production time by 40%.",
