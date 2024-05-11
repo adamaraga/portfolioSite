@@ -16,14 +16,14 @@ const About = () => {
 
   const handleDownload = () => {
     // using Java Script method to get PDF file
-    fetch("AdamAragaResume.pdf").then((response) => {
+    fetch("AdamAbdullahiAResume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "AdamAragaResume.pdf";
+        alink.download = "AdamAbdullahiAResume.pdf";
         alink.click();
       });
     });
@@ -57,14 +57,12 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Dedicated Front-End Software Engineer with over 3 years of hands-on
-        expertise in crafting exceptional user interfaces and driving web
-        application development. Proficient in a wide range of front-end
-        technologies. Adept at translating complex design concepts into
-        responsive, high-performance, and visually appealing user experiences.
-        Proven track record of leading cross-functional teams, streamlining
-        development processes, and consistently delivering projects on time and
-        within scope.
+        Highly skilled Full Stack Developer with over 3 years of experience in
+        designing, developing, and deploying robust web applications. Proficient
+        in both front-end and back-end technologies, with a strong focus on
+        creating user-friendly interfaces and scalable architectures. Adept at
+        collaborating with cross-functional teams to deliver innovative
+        solutions that meet client requirements and exceed expectations.
       </p>
 
       <Button onClick={handleDownload}>Download CV</Button>

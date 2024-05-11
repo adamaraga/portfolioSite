@@ -23,15 +23,6 @@ const WorkPage = () => {
                       alt=""
                     />
                     <h3 className="workPage__item__title">{item.name}</h3>
-                    <div className="workPage__item__tags">
-                      {item.tags.map((tag) => {
-                        return (
-                          <p>
-                            <span>{tag}</span>
-                          </p>
-                        );
-                      })}
-                    </div>
                   </div>
                 </a>
               );
