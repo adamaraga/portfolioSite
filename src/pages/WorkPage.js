@@ -12,7 +12,7 @@ const WorkPage = () => {
       <div className="workPage__main">
         <h2 className="workPage__main__title">Latest Work</h2>
         <ResponsiveMasonry columnsCountBreakPoints={{ 750: 1, 900: 2 }}>
-          <Masonry gutter="2rem">
+          <Masonry gutter="3rem">
             {projectList.map((item) => {
               return (
                 <a href={item.link} target="_blank" rel="noreferrer">

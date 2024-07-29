@@ -11,7 +11,7 @@ const Work = () => {
         <div className="work__main__left">
           <img
             className="work__main__left__img"
-            src="https://res.cloudinary.com/adamworkimages/image/upload/v1691066250/portfolio/groupWork_joemke.png"
+            src="https://res.cloudinary.com/adamworkimages/image/upload/v1722283432/portfolio/new%20portfolio/m6f7obsvoyeip7xrq9ji.png"
             alt=""
           />
         </div>

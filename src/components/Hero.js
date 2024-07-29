@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="hero__right">
         <Star />
         <img
-          src="https://res.cloudinary.com/adamworkimages/image/upload/v1691066163/portfolio/adam_opjkvf.jpg"
+          src="https://res.cloudinary.com/adamworkimages/image/upload/v1722283040/portfolio/new%20portfolio/e3xmeoxtwn6uzlsupb1j.jpg"
           alt=""
         />
       </div>
