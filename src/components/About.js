@@ -57,12 +57,13 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Highly skilled Full Stack Developer with over 3 years of experience in
-        designing, developing, and deploying robust web applications. Proficient
-        in both front-end and back-end technologies, with a strong focus on
-        creating user-friendly interfaces and scalable architectures. Adept at
-        collaborating with cross-functional teams to deliver innovative
-        solutions that meet client requirements and exceed expectations.
+        Highly skilled Full Stack Developer with over 4 years of professional
+        experience designing, developing, and deploying robust web and mobile
+        applications. Proficient in both front-end and back-end technologies,
+        with a strong focus on creating user-friendly interfaces and scalable
+        architectures. Adept at collaborating with cross-functional teams to
+        deliver innovative solutions that meet client requirements and exceed
+        expectations.
       </p>
 
       <Button onClick={handleDownload}>Download CV</Button>
