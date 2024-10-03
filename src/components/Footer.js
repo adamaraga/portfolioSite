@@ -12,6 +12,7 @@ function Footer() {
         <p>Developed by Adam Abdullahi Araga</p>
 
         <div className="footer__info__links">
+          <a href="tel:+2349094120232">+2349094120232</a>
           <a href="mailto:aragaadam@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/adam-araga-b80340231/">
             LinkedIn
