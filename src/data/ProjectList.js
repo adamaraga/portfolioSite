@@ -56,6 +56,12 @@ export const projectList = [
     link: "https://benue.igrportal.com/login",
     // disc: "Benue State Internal Revenue Service (BIRS) payment portal make tax collection and payments easy for both the the government and citizen of Benue State.",
   },
+  {
+    name: "Town Runner",
+    img: "https://res.cloudinary.com/adamworkimages/image/upload/v1744642272/portfolio/sl2ihls7lauz99l9emyx.jpg",
+    link: "https://townrunner.ng",
+    // disc: "Benue State Internal Revenue Service (BIRS) payment portal make tax collection and payments easy for both the the government and citizen of Benue State.",
+  },
   // {
   //   name: "Hotel Ranking",
   //   img: "https://res.cloudinary.com/adamworkimages/image/upload/v1691618846/portfolio/Screenshot_2023-08-09_at_23.01.37_1_tcamed.png",
