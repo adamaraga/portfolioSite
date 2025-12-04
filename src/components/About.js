@@ -23,7 +23,7 @@ const About = () => {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "AdamAbdullahiAResume.pdf";
+        alink.download = "AdamAragaNewResume.pdf";
         alink.click();
       });
     });
@@ -57,13 +57,15 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Highly skilled Full Stack Developer with over 4 years of professional
-        experience designing, developing, and deploying robust web and mobile
-        applications. Proficient in both front-end and back-end technologies,
-        with a strong focus on creating user-friendly interfaces and scalable
-        architectures. Adept at collaborating with cross-functional teams to
-        deliver innovative solutions that meet client requirements and exceed
-        expectations.
+        Senior Full-Stack Developer with over 5 years of experience designing,
+        developing, and deploying high-performance web and mobile applications
+        using React, React Native, and Node.js. Expert in creating intuitive
+        user interfaces and scalable backends, with proven integrations
+        including payment processing, real-time messaging and calling, secure
+        authentication, and geofencing. Demonstrated success across diverse
+        industries, including real estate, transportation, education, banking,
+        and government, managing sensitive data, navigating complex projects,
+        and converting ambiguous requirements into reliable solutions.
       </p>
 
       <Button onClick={handleDownload}>Download CV</Button>
