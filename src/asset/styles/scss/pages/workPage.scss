@@ -29,7 +29,7 @@
     overflow: hidden;
     transition: 0.3s;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
     border-radius: 1rem;
 
     &__title {
@@ -43,7 +43,7 @@
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem;
       text-align: center;
-      transition: 0.5s ease-in-out;
+      transition: 1s ease-in-out;
       opacity: 0;
       font-size: 1.6rem;
     }
@@ -51,7 +51,7 @@
     &__img {
       width: 100%;
       object-fit: cover;
-      transition: 0.5s ease-in-out;
+      transition: 1s ease-in-out;
       border-radius: 1rem;
     }
 
@@ -64,7 +64,7 @@
       gap: 1rem;
       flex-wrap: wrap;
       opacity: 0;
-      transition: 0.5s ease-in-out;
+      transition: 1s ease-in-out;
 
       & p {
         display: inline-block;
@@ -85,8 +85,8 @@
 
     &:hover &__img {
       transform: scale(1.1);
-      filter: blur(1px);
-      -webkit-filter: blur(1px);
+      // filter: blur(1px);
+      // -webkit-filter: blur(1px);
     }
 
     &:hover &__title {
