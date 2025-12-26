@@ -15,7 +15,6 @@ const About = () => {
   const [openModalSkills, setopenModalSkills] = useState(false);
 
   const handleDownload = () => {
-    // using Java Script method to get PDF file
     fetch("AdamAragaNewResume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
