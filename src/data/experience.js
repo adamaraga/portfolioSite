@@ -12,7 +12,7 @@ export const experience = [
   {
     jobTitle: "Senior Full-stack Engineer (React Native)",
     name: "Town Runner | Nigeria (Remote, Part-time)",
-    date: "07/2025 - 09/2025",
+    date: "01/2025 - 09/2025",
     disc: [
       "Built client and rider delivery apps (React Native) with a Node.js backend, implementing delivery processing and real-time tracking.",
       "Implemented in-app chat and calling features, and integrated wallet and payment systems for secure, cashless transactions.",
