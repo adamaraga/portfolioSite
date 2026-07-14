@@ -15,14 +15,14 @@ const About = () => {
   const [openModalSkills, setopenModalSkills] = useState(false);
 
   const handleDownload = () => {
-    fetch("AdamAragaNewResume.pdf").then((response) => {
+    fetch("AdamAragaResume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "AdamAragaNewResume.pdf";
+        alink.download = "AdamAragaResume.pdf";
         alink.click();
       });
     });
@@ -56,7 +56,7 @@ const About = () => {
 
       <h2 className="about__title">About Me</h2>
       <p className="about__disc">
-        Senior Full-Stack Developer with over 5 years of experience designing,
+        Senior Full-Stack Developer with over 6 years of experience designing,
         developing, and deploying high-performance web and mobile applications
         using React, React Native, and Node.js. Expert in creating intuitive
         user interfaces and scalable backends, with proven integrations

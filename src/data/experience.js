@@ -1,8 +1,18 @@
 export const experience = [
   {
+    jobTitle: "Senior Full-stack Developer",
+    name: "Inhouz | Inhouz (Remote, Full-time)",
+    date: "10/2025 - Present",
+    disc: [
+      "Optimized MongoDB aggregation pipelines for a 5-6M+ record field operations dataset, improving query performance through sparse indexing and efficient data retrieval.",
+      "Built real-time WebSocket architecture for mobile offline sync across a safety and field operations management platform, including geofencing and automated check-in/check-out compliance.",
+      "Engineered a Node.js BLE asset-tracking system for Raspberry Pi devices in hospital environments, including cloud authentication and live data ingestion.",
+    ],
+  },
+  {
     jobTitle: "Senior Full-stack Engineer (React Native)",
     name: "Town Runner | Nigeria (Remote, Part-time)",
-    date: "02/2025 - Present",
+    date: "07/2025 - 09/2025",
     disc: [
       "Built client and rider delivery apps (React Native) with a Node.js backend, implementing delivery processing and real-time tracking.",
       "Implemented in-app chat and calling features, and integrated wallet and payment systems for secure, cashless transactions.",
@@ -12,7 +22,7 @@ export const experience = [
   {
     jobTitle: "Senior Full-stack Developer",
     name: "Lily Solutions | Abuja, Nigeria (Full-time)",
-    date: "05/2024 - 07/2025",
+    date: "06/2024 - 06/2025",
     disc: [
       "Developed and optimized the company’s landing page with Next.js, cutting load time by 40%.",
       "Built a staff collaboration platform, featuring file sharing, messaging, and admin tools for content management and announcements.",
